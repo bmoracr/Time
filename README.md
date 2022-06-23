@@ -4,8 +4,11 @@
 
 ###  Step by Step
 
-* Install the module
-* Go to /Time path
+* Lando is requried
+* Composer is required
+* Install requirements
+* You must Install the module [Time Custom]
+* Finally Go to /Time path
 
 ### Enjoy
 
