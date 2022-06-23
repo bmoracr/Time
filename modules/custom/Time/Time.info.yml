@@ -1,0 +1,9 @@
+# All info and requierments the module need
+name: Time
+type: module
+description: Create it to display a DateTime by location
+version: 1.0
+package: Time Custom
+core_version_requirement: ^8 || ^9
+libraries:
+  - Time/Time-styling

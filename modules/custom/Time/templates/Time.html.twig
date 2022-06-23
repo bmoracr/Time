@@ -1,0 +1,20 @@
+<!-- Showing the table to display API -->
+<div class="time-content">
+	<div class="table-container">
+		<h1>Showing time from Worldtime API's</h1>
+		<table class="table-displays">
+			<tr>
+				<th>Location</th>
+				<th>Datetime</th>
+			</tr>
+
+			{% for item in getDate %}
+				<tr>
+					<td>{{item.timezone}}</td>
+					<td id="location1">{{item.datetime}}</td>
+				</tr>
+			{% endfor %}
+
+		</table>
+	</div>
+</div>

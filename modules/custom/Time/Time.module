@@ -1,0 +1,24 @@
+<?php
+
+// Hook theme for displays a twig template and send parameters
+function Time_theme($existing, $type, $theme, $path) {
+
+  return [
+    'Time_theme_hook' => [
+      'render element' => 'children',
+      'template' => 'Time',
+      'path' => $path . '/templates',
+      'variables' => [
+        'getDate' => NULL,
+      ],
+    ],
+  ];
+
+}
+
+// To fix libraries attach libraries
+function Time_element_info_alter(array &$types) {
+  if (isset($types['table'])) {
+    $types['table']['#attached']['library'][] = 'Time/Time-styling';
+  }
+}

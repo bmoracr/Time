@@ -1,0 +1,8 @@
+# Setting route for module
+Time.content:
+  path: '/Time' 
+  defaults: 
+    _controller: '\Drupal\Time\Controller\TimeController::content' 
+    _title: 'Getting Times'
+  requirements: 
+    _permission: 'access content' 
